@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreativitas Dessert Melalui Pembelajaran Berbasis Digital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background: url('https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=1080') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        h2, h3 {
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        }
+        .section:nth-child(2) { /* Apa itu Dessert */
+            background-image: url('https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=600');
+        }
+        .section:nth-child(3) { /* Manfaat Dessert */
+            background-image: url('https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=600');
+        }
+        .section:nth-child(4) { /* Jenis-Jenis Dessert */
+            background-image: url('https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=600'); /* Atau cari yang berbeda, tapi ini placeholder */
+        }
+        .section:nth-child(5) { /* Contoh Dessert */
+            background-image: url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=600');
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        ol {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kreativitas Dessert Melalui Pembelajaran Berbasis Digital</h1>
+    
+    <div class="section">
+        <h2>Apa itu Dessert?</h2>
+        <p>Dessert adalah hidangan penutup yang biasanya disajikan setelah makan utama. Dessert umumnya manis dan bertujuan untuk memberikan kepuasan rasa setelah makan. Melalui pembelajaran berbasis digital, kita dapat mengeksplorasi kreativitas dalam membuat dessert dengan menggunakan teknologi seperti video tutorial, aplikasi resep, dan platform online untuk berbagi ide.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Manfaat Dessert</h2>
+        <ul>
+            <li><strong>Meningkatkan suasana hati:</strong> Rasa manis dari dessert dapat melepaskan endorfin, hormon kebahagiaan.</li>
+            <li><strong>Sumber energi:</strong> Dessert sering mengandung karbohidrat dan gula yang memberikan energi cepat.</li>
+            <li><strong>Mendorong kreativitas:</strong> Membuat dessert melatih imajinasi dan keterampilan kuliner.</li>
+            <li><strong>Sosialisasi:</strong> Berbagi dessert dapat mempererat hubungan sosial.</li>
+            <li><strong>Nutrisi tambahan:</strong> Beberapa dessert mengandung buah-buahan atau bahan sehat lainnya.</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Jenis-Jenis Dessert</h2>
+        <p>Dessert dapat dibagi menjadi beberapa jenis berdasarkan suhu penyajiannya, seperti hot dessert (panas) dan cold dessert (dingin). Klik tombol di bawah untuk melihat contoh dan penjelasan.</p>
+        
+        <h3>Hot Dessert</h3>
+        <button onclick="toggleContent('hot')">Lihat Contoh Hot Dessert</button>
+        <div id="hot" class="hidden">
+            <p><strong>Contoh: Apple Pie</strong></p>
+            <p>Apple Pie adalah dessert panas yang terbuat dari adonan pastry yang diisi dengan potongan apel, gula, dan rempah-rempah seperti kayu manis. Biasanya dipanggang hingga renyah dan disajikan hangat. Ini populer karena kombinasi rasa manis dan asam dari apel, serta tekstur renyah dari kulitnya.</p>
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Apple Pie">
+        </div>
+        
+        <h3>Cold Dessert</h3>
+        <button onclick="toggleContent('cold')">Lihat Contoh Cold Dessert</button>
+        <div id="cold" class="hidden">
+            <p><strong>Contoh: Ice Cream Sundae</strong></p>
+            <p>Ice Cream Sundae adalah dessert dingin yang terdiri dari es krim dengan topping seperti sirup cokelat, kacang, atau buah-buahan. Disajikan dingin untuk memberikan sensasi segar. Ini cocok untuk cuaca panas dan dapat dikustomisasi dengan berbagai rasa.</p>
+            <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Ice Cream Sundae">
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Contoh Dessert: Chocolate Cake</h2>
+        <p>Berikut adalah contoh resep sederhana untuk membuat Chocolate Cake. Ini adalah dessert klasik yang dapat dipelajari melalui video tutorial online.</p>
+        <h3>Bahan-Bahan (untuk 8 porsi):</h3>
+        <ul>
+            <li>200g tepung terigu</li>
+            <li>200g gula pasir</li>
+            <li>100g bubuk kakao</li>
+            <li>1 sdt baking powder</li>
+            <li>1/2 sdt baking soda</li>
+            <li>2 butir telur</li>
+            <li>200ml susu</li>
+            <li>100ml minyak sayur</li>
+            <li>1 sdt ekstrak vanila</li>
+            <li>200ml air panas</li>
+        </ul>
+        <h3>Cara Pembuatan:</h3>
+        <ol>
+            <li>Panaskan oven hingga 180°C dan siapkan loyang yang sudah diolesi minyak.</li>
+            <li>Campurkan tepung terigu, gula, bubuk kakao, baking powder, dan baking soda dalam mangkuk besar.</li>
+            <li>Tambahkan telur, susu, minyak sayur, dan ekstrak vanila. Aduk hingga rata.</li>
+            <li>Tuangkan air panas sedikit demi sedikit sambil terus mengaduk hingga adonan halus.</li>
+            <li>Tuangkan adonan ke dalam loyang dan panggang selama 30-35 menit atau hingga tusuk gigi keluar bersih.</li>
+            <li>Dinginkan kue sebelum disajikan. Tambahkan topping seperti frosting cokelat jika diinginkan.</li>
+        </ol>
+        <p>Gambar Chocolate Cake:</p>
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Chocolate Cake">
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            const element = document.getElementById(id);
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+            } else {
+                element.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
